@@ -1,0 +1,42 @@
+/* إضافة هذه الأنماط لتحسين العرض */
+.search-results-info {
+  background-color: #e8f4fc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #7f8c8d;
+}
+
+.no-results i {
+  margin-bottom: 20px;
+  color: #bdc3c7;
+}
+
+.no-results h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.no-results p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* تحسين عرض الأرقام */
+.product-price, 
+.total-price,
+.cart-item-total {
+  font-family: 'Cairo', sans-serif;
+  direction: ltr;
+  display: inline-block;
+}

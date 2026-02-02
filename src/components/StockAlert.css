@@ -1,0 +1,88 @@
+.stock-alert {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  border-right: 4px solid #ddd;
+}
+
+.stock-alert.out-of-stock {
+  background-color: #ffebee;
+  border-right-color: #e74c3c;
+}
+
+.stock-alert.low-stock {
+  background-color: #fff3e0;
+  border-right-color: #f39c12;
+}
+
+.stock-alert.medium-stock {
+  background-color: #e3f2fd;
+  border-right-color: #3498db;
+}
+
+.stock-alert.high-stock {
+  background-color: #e8f5e9;
+  border-right-color: #2ecc71;
+}
+
+.stock-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.stock-info i {
+  font-size: 16px;
+}
+
+.stock-alert.out-of-stock i {
+  color: #e74c3c;
+}
+
+.stock-alert.low-stock i {
+  color: #f39c12;
+}
+
+.stock-alert.medium-stock i {
+  color: #3498db;
+}
+
+.stock-alert.high-stock i {
+  color: #2ecc71;
+}
+
+.stock-text {
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.cart-info {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.stock-progress {
+  margin-top: 8px;
+}
+
+.stock-progress-bar {
+  height: 6px;
+  background-color: #2ecc71;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.stock-numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 11px;
+  color: #7f8c8d;
+}

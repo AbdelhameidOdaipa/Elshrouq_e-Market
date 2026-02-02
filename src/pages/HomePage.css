@@ -1,0 +1,229 @@
+/* HomePage.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+/* حالة التحميل */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 20px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* حالة عدم وجود منتجات */
+.no-products {
+  text-align: center;
+  padding: 60px 20px;
+  color: #7f8c8d;
+}
+
+.no-products i {
+  color: #bdc3c7;
+  margin-bottom: 20px;
+}
+
+/* شريط نتائج البحث */
+.search-results-info {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-right: 4px solid #3498db;
+}
+
+.search-info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results-count {
+  background-color: #3498db;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
+.clear-search-btn {
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+/* معلومات الفلترة */
+.filter-info {
+  background-color: #ecf0f1;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* حالة عدم وجود نتائج */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  margin: 40px 0;
+}
+
+.no-results-icon {
+  color: #95a5a6;
+  margin-bottom: 20px;
+}
+
+.no-results-text {
+  color: #7f8c8d;
+  margin: 15px 0;
+}
+
+.suggestions {
+  text-align: right;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.suggestions ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.suggestions li {
+  padding: 5px 0;
+  color: #34495e;
+}
+
+.view-all-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+
+/* ملاحظة المنتجات */
+.products-note {
+  text-align: center;
+  padding: 15px;
+  background-color: #e8f4fc;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+.products-note i {
+  color: #3498db;
+  margin-left: 8px;
+}
+
+/* تذييل الصفحة */
+.home-footer {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature i {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.feature h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .search-info-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .filter-info {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .no-results {
+    padding: 40px 15px;
+  }
+}
